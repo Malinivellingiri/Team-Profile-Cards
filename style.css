@@ -1,0 +1,55 @@
+body{
+     background-color: lightblue;
+     font-family: Arial, sans-serif;
+}
+
+h2{
+    color: "darkblue";
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; 
+}
+
+.profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .card, .card1, .con, .con1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba( 0, 0, 0.1);
+}
+
+.card1{
+    background-color: rgb(156, 176, 237);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1);
+}
+
+.con{
+    background-color: rgb(156, 176, 237);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1);
+}
+
+.con1{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba( 0, 0, 0.1);
+}
